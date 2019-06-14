@@ -3,7 +3,7 @@ Code R présenté par Sébastien Brodeur lors du DAMM de juin 2019.  Ce code per
 
 ![Architecture de la solution](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/Attribution-Maison.png)
 
-##Pour vous connecter à BigQuery depuis R, vous devez :
+## Pour vous connecter à BigQuery depuis R, vous devez :
 1. Créer un service account (https://cloud.google.com/iam/docs/creating-managing-service-accounts)
 2. Donner les droits d'utiliser BigQuery à ce service account. 
 3. Récupérer le service acount token (fichier JSON) (https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
