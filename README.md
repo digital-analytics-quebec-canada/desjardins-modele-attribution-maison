@@ -11,7 +11,7 @@ Code R présenté par [Sébastien Brodeur](https://www.linkedin.com/in/brodseba/
 
 ## Pour vous connecter à BigQuery depuis R, vous devez :
 1. Créer un service account (https://cloud.google.com/iam/docs/creating-managing-service-accounts)
-2. Donner les droits d'utiliser BigQuery à ce service account. 
+2. Donner les droits d'utiliser BigQuery à ce service account. (https://cloud.google.com/iam/docs/granting-changing-revoking-access)
 3. Récupérer le service acount token (fichier JSON) (https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
 4. Appaler la fonction set_service_token() en indiquant l'emplacement du fichier.
 
