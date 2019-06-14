@@ -10,5 +10,5 @@ Code R présenté par Sébastien Brodeur lors du DAMM de juin 2019.  Ce code per
 4. Appaler la fonction set_service_token() en indiquant l'emplacement du fichier.
 
 ## Considération de sécurité :
-1 Assurez-vous que le service account n'a que les accès minimums nécessaire à exécuter la requête BigQuery (bigquery-user) et injecter les données dans une table (bigquery-dataEditor) via la console IAM.
+1. Assurez-vous que le service account n'a que les accès minimums nécessaire à exécuter la requête BigQuery (bigquery-user) et injecter les données dans une table (bigquery-dataEditor) via la console IAM.
 2. Assurez-vous de protéger le fichier JSON (service_account_token.json) car quiconque à ce fichier peut exécuter des requêtes comme s'il avait les même accès que le service acount.
