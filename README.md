@@ -1,8 +1,18 @@
 # desjardins-modele-attribution-maison
 Code R présenté par [Sébastien Brodeur](https://www.linkedin.com/in/brodseba/) de chez Desjardins lors du [DAMM](https://www.linkedin.com/groups/3745656/) de juin 2019.  Ce code permet de rouler une requête BigQuery afin d'identifier l'attribution en filtrant pour ne conserver dans notre modèle que les visites significatives.  Le script R utilise ensuite le package [channelAttribution](https://cran.r-project.org/web/packages/ChannelAttribution/index.html) pour mesurer le résultat en utilisant un modèle de chaîne de Markov (le même modèle utilisé par le modèle data-driven dans Google Analytics.)
 
+## Pourquoi?
+La très grande majorité des visiteurs sur notre site viennent pour effectuer leurs transactions financières quotidiennes.  Nous avons donc un fort volume de trafic qui n'est pas significative lorsque nous voulons mesurer l'attribution pour une campagne numérique sur la portion informationnel.
+![Multitudes de visites, mais seulement certaines sont pertinentes](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/attribution-maison-pourquoi.png)
+Donc, ce modèle maison va éliminer les visites qui ne sont pas pertinentes pour l'analyse dans ce contexte.  Par exemple, nous pourrions conserver uniquement les visites durant lesquelles un compotement de magasinnage à eu lieu (ex. : consultation d'une page produit, utilisation d'un simulateur, consultation des taux, etc.)  Nous allons ensuite appliquer un modèle de chaine de Markov pour mesurer l'attribution.
+
 ## Architecture de la solution
 ![Architecture de la solution](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/Attribution-Maison.png)
+
+1. Les données de notre compte Google Analytics 360 sont envoyé à chaque jour dans BigQuery.
+2. Un script R est exécuter à chaque jour pour chaque conversions que nous voulons attribuer.
+3. Le script va sauvegarder les données dans une table BigQuery.
+4. À la fin, un tableau de bord Data Studio permet d'analyser les conversions dans le temps.
 
 ### Exemple de tableau de bord Data Studio qui utilise ces données pour comparer les modèles d'attributions.
 ![Comparaison des divers modèles](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/attribution-maison-ds-2.png)
