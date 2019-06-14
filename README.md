@@ -4,7 +4,7 @@ Code R présenté par [Sébastien Brodeur](https://www.linkedin.com/in/brodseba/
 ## Architecture de la solution
 ![Architecture de la solution](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/Attribution-Maison.png)
 
-## Exemple de tableau de bord Data Studio qui utilise ces données pour comparer les modèles d'attributions.
+### Exemple de tableau de bord Data Studio qui utilise ces données pour comparer les modèles d'attributions.
 ![Comparaison des divers modèles](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/attribution-maison-ds-2.png)
 
 ![Tableau sommaire des conversions par canaux](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/attribution-maison-ds-1.png)
@@ -15,6 +15,6 @@ Code R présenté par [Sébastien Brodeur](https://www.linkedin.com/in/brodseba/
 3. Récupérer le service acount token (fichier JSON) (https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
 4. Appaler la fonction set_service_token() en indiquant l'emplacement du fichier.
 
-## Considération de sécurité :
+### Considération de sécurité :
 1. Assurez-vous que le service account n'a que les accès minimums nécessaire à exécuter la requête BigQuery (bigquery-user) et injecter les données dans une table (bigquery-dataEditor) via la console IAM.
 2. Assurez-vous de protéger le fichier JSON (service_account_token.json) car quiconque à ce fichier peut exécuter des requêtes comme s'il avait les même accès que le service acount.
