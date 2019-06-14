@@ -5,7 +5,9 @@ Code R présenté par Sébastien Brodeur lors du DAMM de juin 2019.  Ce code per
 ![Architecture de la solution](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/Attribution-Maison.png)
 
 ## Exemple de tableau de bord Data Studio qui utilise ces données pour comparer les modèles d'attributions.
+![Comparaison des divers modèles](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/attribution-maison-ds-2.png)
 
+![Tableau sommaire des conversions par canaux](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/attribution-maison-ds-1.png)
 
 ## Pour vous connecter à BigQuery depuis R, vous devez :
 1. Créer un service account (https://cloud.google.com/iam/docs/creating-managing-service-accounts)
