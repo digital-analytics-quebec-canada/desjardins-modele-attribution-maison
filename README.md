@@ -16,6 +16,8 @@ Donc, ce modèle maison va éliminer les visites qui ne sont pas pertinentes pou
 
 Voici un exemple d'utilisation de la fonction R. Dans cet exemple, nous tentons d'identifier les canaux responsables de la complétion du formulaire de prise de rendez-vous.
 <pre>
+// FetchBQData(sourceProjet, sourceDataset, destinationTable, conversionID, conversionSQL, itemsSQL, window)
+
 FetchBQData(
   "projectID",
   "datasetId",
