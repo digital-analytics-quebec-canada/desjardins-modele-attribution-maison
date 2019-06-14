@@ -14,6 +14,17 @@ Donc, ce modèle maison va éliminer les visites qui ne sont pas pertinentes pou
 3. Le script va sauvegarder les données dans une table BigQuery.
 4. À la fin, un tableau de bord Data Studio permet d'analyser les conversions dans le temps.
 
+Voici un exemple d'utilisation de la fonction R. Dans cet exemple, nous tentons d'identifier les canaux responsables de la complétion du formulaire de prise de rendez-vous.
+<pre>
+FetchBQData(
+  "projectID",
+  "datasetId",
+  "modele_attribution_maison_channel",
+  "Form-Prise-Rendez-Vous",
+  "hits.eventInfo.eventCategory = 'Formulaire' AND hits.eventInfo.eventAction = 'complete' AND hits.eventInfo.eventLabel = 'Prise de rendez-vous'",
+  "IF(trafficSource.isTrueDirect, 'Direct', channelGrouping)"
+)</pre>
+
 ### Exemple de tableau de bord Data Studio qui utilise ces données pour comparer les modèles d'attributions.
 ![Comparaison des divers modèles](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/attribution-maison-ds-2.png)
 
