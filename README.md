@@ -9,6 +9,11 @@ Donc, ce modèle maison va éliminer les visites qui ne sont pas pertinentes pou
 ## Architecture de la solution
 ![Architecture de la solution](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/Attribution-Maison.png)
 
+### Pré-requis
+1. Être client Google Analytics 360.
+2. Avoir activé l'importation des données Google Analyitcs dans BigQuery.
+
+### Fonctionnement
 1. Les données de notre compte Google Analytics 360 sont envoyé à chaque jour dans BigQuery.
 2. Un script R est exécuter à chaque jour pour chaque conversions que nous voulons attribuer.
 3. Le script va sauvegarder les données dans une table BigQuery.
