@@ -4,7 +4,7 @@
 ## Pourquoi?
 La très grande majorité des visiteurs sur notre site viennent pour effectuer leurs transactions financières quotidiennes.  Nous avons donc un fort volume de trafic qui n'est pas significative lorsque nous voulons mesurer l'attribution pour une campagne numérique sur la portion informationnel.
 ![Multitudes de visites, mais seulement certaines sont pertinentes](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/attribution-maison-pourquoi.png)
-Donc, ce modèle maison va éliminer les visites qui ne sont pas pertinentes pour l'analyse dans ce contexte.  Par exemple, nous pourrions conserver uniquement les visites durant lesquelles un compotement de magasinnage à eu lieu (ex. : consultation d'une page produit, utilisation d'un simulateur, consultation des taux, etc.)  Nous allons ensuite appliquer un modèle de chaine de Markov pour mesurer l'attribution.
+Ce modèle maison nous permet donc d'éliminer les visites qui ne sont pas pertinentes pour l'analyse dans ce contexte.  Par exemple, nous pourrions conserver uniquement les visites durant lesquelles un compotement de magasinnage à eu lieu (ex. : consultation d'une page produit, utilisation d'un simulateur, consultation des taux, etc.)  Nous allons ensuite appliquer un modèle de chaine de Markov pour mesurer l'attribution sur les visites restantes.
 
 ## Architecture de la solution
 ![Architecture de la solution](https://github.com/digital-analytics-quebec-canada/desjardins-modele-attribution-maison/blob/master/Attribution-Maison.png)
