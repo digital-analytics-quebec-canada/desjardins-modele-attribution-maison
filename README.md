@@ -41,7 +41,7 @@ FetchBQData(
 1. Créer un service account (https://cloud.google.com/iam/docs/creating-managing-service-accounts)
 2. Donner les droits d'utiliser BigQuery à ce service account. (https://cloud.google.com/iam/docs/granting-changing-revoking-access)
 3. Récupérer le service acount token (fichier JSON) (https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
-4. Appaler la fonction set_service_token() en indiquant l'emplacement du fichier.
+4. Appeler la fonction set_service_token() en indiquant l'emplacement du fichier.
 
 ### Considération de sécurité :
 1. Assurez-vous que le service account n'a que les accès minimums nécessaire à exécuter la requête BigQuery (bigquery-user) et injecter les données dans une table (bigquery-dataEditor) via la console IAM.
